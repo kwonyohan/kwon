@@ -1,4 +1,2 @@
 print("git test")
-
-print("transfer1")
-
+print("branchA")
