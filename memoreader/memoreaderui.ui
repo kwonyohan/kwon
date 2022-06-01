@@ -6,7 +6,7 @@
    <rect>
     <x>0</x>
     <y>0</y>
-    <width>800</width>
+    <width>847</width>
     <height>600</height>
    </rect>
   </property>
@@ -14,32 +14,12 @@
    <string>memoreader</string>
   </property>
   <widget class="QWidget" name="centralwidget">
-   <widget class="QTextEdit" name="hexview">
-    <property name="geometry">
-     <rect>
-      <x>30</x>
-      <y>40</y>
-      <width>371</width>
-      <height>421</height>
-     </rect>
-    </property>
-   </widget>
-   <widget class="QTextBrowser" name="viewtxt">
-    <property name="geometry">
-     <rect>
-      <x>420</x>
-      <y>40</y>
-      <width>351</width>
-      <height>511</height>
-     </rect>
-    </property>
-   </widget>
    <widget class="QTextBrowser" name="console">
     <property name="geometry">
      <rect>
-      <x>30</x>
+      <x>10</x>
       <y>490</y>
-      <width>371</width>
+      <width>401</width>
       <height>61</height>
      </rect>
     </property>
@@ -47,7 +27,7 @@
    <widget class="QLabel" name="console_label">
     <property name="geometry">
      <rect>
-      <x>30</x>
+      <x>10</x>
       <y>470</y>
       <width>77</width>
       <height>18</height>
@@ -55,7 +35,7 @@
     </property>
     <property name="font">
      <font>
-      <pointsize>12</pointsize>
+      <pointsize>11</pointsize>
       <weight>50</weight>
       <bold>false</bold>
      </font>
@@ -67,11 +47,16 @@
    <widget class="QTabWidget" name="tabWidget">
     <property name="geometry">
      <rect>
-      <x>410</x>
+      <x>430</x>
       <y>10</y>
-      <width>371</width>
-      <height>551</height>
+      <width>411</width>
+      <height>21</height>
      </rect>
+    </property>
+    <property name="font">
+     <font>
+      <pointsize>11</pointsize>
+     </font>
     </property>
     <property name="currentIndex">
      <number>0</number>
@@ -116,24 +101,49 @@
       <string>ANSI</string>
      </attribute>
     </widget>
+    <widget class="QWidget" name="unicode">
+     <attribute name="title">
+      <string>UNICODE</string>
+     </attribute>
+    </widget>
     <widget class="QWidget" name="hex">
      <attribute name="title">
       <string>HEX</string>
      </attribute>
     </widget>
    </widget>
+   <widget class="QTextEdit" name="hexview">
+    <property name="geometry">
+     <rect>
+      <x>10</x>
+      <y>30</y>
+      <width>411</width>
+      <height>421</height>
+     </rect>
+    </property>
+   </widget>
+   <widget class="QTextBrowser" name="textviewer">
+    <property name="geometry">
+     <rect>
+      <x>430</x>
+      <y>30</y>
+      <width>411</width>
+      <height>521</height>
+     </rect>
+    </property>
+   </widget>
    <zorder>tabWidget</zorder>
-   <zorder>hexview</zorder>
    <zorder>console</zorder>
    <zorder>console_label</zorder>
-   <zorder>viewtxt</zorder>
+   <zorder>hexview</zorder>
+   <zorder>textviewer</zorder>
   </widget>
   <widget class="QMenuBar" name="menubar">
    <property name="geometry">
     <rect>
      <x>0</x>
      <y>0</y>
-     <width>800</width>
+     <width>847</width>
      <height>21</height>
     </rect>
    </property>
@@ -148,6 +158,8 @@
     <property name="title">
      <string>도움말</string>
     </property>
+    <addaction name="action"/>
+    <addaction name="actionmemoreader"/>
    </widget>
    <widget class="QMenu" name="menu_Language">
     <property name="title">
@@ -185,6 +197,17 @@
   <action name="actionEnglish">
    <property name="text">
     <string>English</string>
+   </property>
+  </action>
+  <action name="action">
+   <property name="text">
+    <string>
+도움말 보기</string>
+   </property>
+  </action>
+  <action name="actionmemoreader">
+   <property name="text">
+    <string>memoreader 정보</string>
    </property>
   </action>
  </widget>
