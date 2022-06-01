@@ -2,6 +2,7 @@ import sys
 from PyQt5.QtWidgets import QApplication, QWidget
 from PyQt5 import uic
 
+print("hello")
 
 class memoreaderui(QWidget):
     def __init__(self):
