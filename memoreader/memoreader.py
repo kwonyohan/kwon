@@ -134,6 +134,13 @@ class Ui_MainWindow(object):
         self.retranslateUi(MainWindow)
         self.tabWidget.setCurrentIndex(0)
         QtCore.QMetaObject.connectSlotsByName(MainWindow)
+        
+        self.action_open.triggered.connect(self.openFunction)
+        
+    def openFunction(self):
+        fname = QFileDialog.getOpenFileName(self)
+        print(fname[0])
+        print("open!!")
 
     def retranslateUi(self, MainWindow):
         _translate = QtCore.QCoreApplication.translate
@@ -159,6 +166,8 @@ class Ui_MainWindow(object):
         self.action.setText(_translate("MainWindow", "\n"
 "도움말 보기"))
         self.actionmemoreader.setText(_translate("MainWindow", "memoreader 정보"))
+        
+
 
 
 if __name__ == "__main__":
