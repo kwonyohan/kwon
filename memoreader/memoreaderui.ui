@@ -6,7 +6,7 @@
    <rect>
     <x>0</x>
     <y>0</y>
-    <width>847</width>
+    <width>783</width>
     <height>600</height>
    </rect>
   </property>
@@ -19,7 +19,7 @@
      <rect>
       <x>10</x>
       <y>490</y>
-      <width>401</width>
+      <width>371</width>
       <height>61</height>
      </rect>
     </property>
@@ -47,10 +47,10 @@
    <widget class="QTabWidget" name="tabWidget">
     <property name="geometry">
      <rect>
-      <x>430</x>
+      <x>390</x>
       <y>10</y>
-      <width>411</width>
-      <height>21</height>
+      <width>381</width>
+      <height>551</height>
      </rect>
     </property>
     <property name="font">
@@ -85,65 +85,180 @@
      <attribute name="title">
       <string>UTF-8</string>
      </attribute>
+     <widget class="QTextBrowser" name="textviewer_utp8">
+      <property name="geometry">
+       <rect>
+        <x>0</x>
+        <y>0</y>
+        <width>371</width>
+        <height>521</height>
+       </rect>
+      </property>
+      <property name="minimumSize">
+       <size>
+        <width>371</width>
+        <height>0</height>
+       </size>
+      </property>
+      <property name="maximumSize">
+       <size>
+        <width>371</width>
+        <height>16777215</height>
+       </size>
+      </property>
+     </widget>
     </widget>
     <widget class="QWidget" name="euckr">
      <attribute name="title">
       <string>EUC-KR</string>
      </attribute>
+     <widget class="QTextBrowser" name="textviewer_euckr">
+      <property name="geometry">
+       <rect>
+        <x>0</x>
+        <y>0</y>
+        <width>371</width>
+        <height>521</height>
+       </rect>
+      </property>
+      <property name="minimumSize">
+       <size>
+        <width>371</width>
+        <height>0</height>
+       </size>
+      </property>
+      <property name="maximumSize">
+       <size>
+        <width>371</width>
+        <height>16777215</height>
+       </size>
+      </property>
+     </widget>
     </widget>
     <widget class="QWidget" name="cp949">
      <attribute name="title">
       <string>CP949</string>
      </attribute>
+     <widget class="QTextBrowser" name="textviewer_cp949">
+      <property name="geometry">
+       <rect>
+        <x>0</x>
+        <y>0</y>
+        <width>371</width>
+        <height>521</height>
+       </rect>
+      </property>
+      <property name="minimumSize">
+       <size>
+        <width>371</width>
+        <height>0</height>
+       </size>
+      </property>
+      <property name="maximumSize">
+       <size>
+        <width>371</width>
+        <height>16777215</height>
+       </size>
+      </property>
+     </widget>
     </widget>
     <widget class="QWidget" name="ansi">
      <attribute name="title">
       <string>ANSI</string>
      </attribute>
+     <widget class="QTextBrowser" name="textviewer_ansi">
+      <property name="geometry">
+       <rect>
+        <x>0</x>
+        <y>0</y>
+        <width>371</width>
+        <height>521</height>
+       </rect>
+      </property>
+      <property name="minimumSize">
+       <size>
+        <width>371</width>
+        <height>0</height>
+       </size>
+      </property>
+      <property name="maximumSize">
+       <size>
+        <width>371</width>
+        <height>16777215</height>
+       </size>
+      </property>
+     </widget>
     </widget>
     <widget class="QWidget" name="unicode">
      <attribute name="title">
       <string>UNICODE</string>
      </attribute>
-    </widget>
-    <widget class="QWidget" name="hex">
-     <attribute name="title">
-      <string>HEX</string>
-     </attribute>
+     <widget class="QTextBrowser" name="textviewer_unicode">
+      <property name="geometry">
+       <rect>
+        <x>0</x>
+        <y>0</y>
+        <width>371</width>
+        <height>521</height>
+       </rect>
+      </property>
+      <property name="minimumSize">
+       <size>
+        <width>371</width>
+        <height>0</height>
+       </size>
+      </property>
+      <property name="maximumSize">
+       <size>
+        <width>371</width>
+        <height>16777215</height>
+       </size>
+      </property>
+     </widget>
     </widget>
    </widget>
    <widget class="QTextBrowser" name="hexview">
     <property name="geometry">
      <rect>
       <x>10</x>
-      <y>30</y>
-      <width>411</width>
+      <y>34</y>
+      <width>371</width>
       <height>421</height>
      </rect>
     </property>
    </widget>
-   <widget class="QTextBrowser" name="textviewer">
+   <widget class="QLabel" name="console_label_2">
     <property name="geometry">
      <rect>
-      <x>430</x>
-      <y>30</y>
-      <width>411</width>
-      <height>521</height>
+      <x>10</x>
+      <y>13</y>
+      <width>141</width>
+      <height>18</height>
      </rect>
+    </property>
+    <property name="font">
+     <font>
+      <pointsize>11</pointsize>
+      <weight>50</weight>
+      <bold>false</bold>
+     </font>
+    </property>
+    <property name="text">
+     <string>불러온 파일 HEX 값</string>
     </property>
    </widget>
    <zorder>tabWidget</zorder>
    <zorder>console</zorder>
    <zorder>console_label</zorder>
    <zorder>hexview</zorder>
-   <zorder>textviewer</zorder>
+   <zorder>console_label_2</zorder>
   </widget>
   <widget class="QMenuBar" name="menubar">
    <property name="geometry">
     <rect>
      <x>0</x>
      <y>0</y>
-     <width>847</width>
+     <width>783</width>
      <height>21</height>
     </rect>
    </property>
