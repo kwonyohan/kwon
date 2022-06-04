@@ -112,7 +112,7 @@
      </attribute>
     </widget>
    </widget>
-   <widget class="QTextEdit" name="hexview">
+   <widget class="QTextBrowser" name="hexview">
     <property name="geometry">
      <rect>
       <x>10</x>
@@ -152,7 +152,6 @@
      <string>파일</string>
     </property>
     <addaction name="action_open"/>
-    <addaction name="action_save"/>
    </widget>
    <widget class="QMenu" name="menu_help">
     <property name="title">
