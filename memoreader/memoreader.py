@@ -17,7 +17,8 @@ class Ui_MainWindow(object):
         MainWindow.resize(783, 600)
         self.centralwidget = QtWidgets.QWidget(MainWindow)
         self.centralwidget.setObjectName("centralwidget")
-        self.console = QtWidgets.QTextBrowser(self.centralwidget)
+        self.console = QtWidgets.QTextEdit(self.centralwidget)
+        self.console.setEnabled(True)
         self.console.setGeometry(QtCore.QRect(10, 490, 371, 61))
         self.console.setObjectName("console")
         self.console_label = QtWidgets.QLabel(self.centralwidget)
@@ -29,6 +30,7 @@ class Ui_MainWindow(object):
         self.console_label.setFont(font)
         self.console_label.setObjectName("console_label")
         self.tabWidget = QtWidgets.QTabWidget(self.centralwidget)
+        self.tabWidget.setEnabled(True)
         self.tabWidget.setGeometry(QtCore.QRect(390, 10, 381, 551))
         font = QtGui.QFont()
         font.setPointSize(11)
@@ -42,7 +44,8 @@ class Ui_MainWindow(object):
         self.utp8.setAccessibleName("")
         self.utp8.setStyleSheet("")
         self.utp8.setObjectName("utp8")
-        self.textviewer_utp8 = QtWidgets.QTextBrowser(self.utp8)
+        self.textviewer_utp8 = QtWidgets.QTextEdit(self.utp8)
+        self.textviewer_utp8.setEnabled(True)
         self.textviewer_utp8.setGeometry(QtCore.QRect(0, 0, 371, 521))
         self.textviewer_utp8.setMinimumSize(QtCore.QSize(371, 0))
         self.textviewer_utp8.setMaximumSize(QtCore.QSize(371, 16777215))
@@ -50,7 +53,8 @@ class Ui_MainWindow(object):
         self.tabWidget.addTab(self.utp8, "")
         self.euckr = QtWidgets.QWidget()
         self.euckr.setObjectName("euckr")
-        self.textviewer_euckr = QtWidgets.QTextBrowser(self.euckr)
+        self.textviewer_euckr = QtWidgets.QTextEdit(self.euckr)
+        self.textviewer_euckr.setEnabled(True)
         self.textviewer_euckr.setGeometry(QtCore.QRect(0, 0, 371, 521))
         self.textviewer_euckr.setMinimumSize(QtCore.QSize(371, 0))
         self.textviewer_euckr.setMaximumSize(QtCore.QSize(371, 16777215))
@@ -58,7 +62,8 @@ class Ui_MainWindow(object):
         self.tabWidget.addTab(self.euckr, "")
         self.cp949 = QtWidgets.QWidget()
         self.cp949.setObjectName("cp949")
-        self.textviewer_cp949 = QtWidgets.QTextBrowser(self.cp949)
+        self.textviewer_cp949 = QtWidgets.QTextEdit(self.cp949)
+        self.textviewer_cp949.setEnabled(True)
         self.textviewer_cp949.setGeometry(QtCore.QRect(0, 0, 371, 521))
         self.textviewer_cp949.setMinimumSize(QtCore.QSize(371, 0))
         self.textviewer_cp949.setMaximumSize(QtCore.QSize(371, 16777215))
@@ -66,7 +71,8 @@ class Ui_MainWindow(object):
         self.tabWidget.addTab(self.cp949, "")
         self.ansi = QtWidgets.QWidget()
         self.ansi.setObjectName("ansi")
-        self.textviewer_ansi = QtWidgets.QTextBrowser(self.ansi)
+        self.textviewer_ansi = QtWidgets.QTextEdit(self.ansi)
+        self.textviewer_ansi.setEnabled(True)
         self.textviewer_ansi.setGeometry(QtCore.QRect(0, 0, 371, 521))
         self.textviewer_ansi.setMinimumSize(QtCore.QSize(371, 0))
         self.textviewer_ansi.setMaximumSize(QtCore.QSize(371, 16777215))
@@ -74,13 +80,15 @@ class Ui_MainWindow(object):
         self.tabWidget.addTab(self.ansi, "")
         self.unicode = QtWidgets.QWidget()
         self.unicode.setObjectName("unicode")
-        self.textviewer_unicode = QtWidgets.QTextBrowser(self.unicode)
+        self.textviewer_unicode = QtWidgets.QTextEdit(self.unicode)
+        self.textviewer_unicode.setEnabled(True)
         self.textviewer_unicode.setGeometry(QtCore.QRect(0, 0, 371, 521))
         self.textviewer_unicode.setMinimumSize(QtCore.QSize(371, 0))
         self.textviewer_unicode.setMaximumSize(QtCore.QSize(371, 16777215))
         self.textviewer_unicode.setObjectName("textviewer_unicode")
         self.tabWidget.addTab(self.unicode, "")
-        self.hexview = QtWidgets.QTextBrowser(self.centralwidget)
+        self.hexview = QtWidgets.QTextEdit(self.centralwidget)
+        self.hexview.setEnabled(True)
         self.hexview.setGeometry(QtCore.QRect(10, 34, 371, 421))
         self.hexview.setObjectName("hexview")
         self.console_label_2 = QtWidgets.QLabel(self.centralwidget)
@@ -132,15 +140,8 @@ class Ui_MainWindow(object):
         self.menubar.addAction(self.menu_Language.menuAction())
 
         self.retranslateUi(MainWindow)
-        self.tabWidget.setCurrentIndex(0)
+        self.tabWidget.setCurrentIndex(2)
         QtCore.QMetaObject.connectSlotsByName(MainWindow)
-        
-        self.action_open.triggered.connect(self.openFunction)
-        
-    def openFunction(self):
-        fname = QFileDialog.getOpenFileName(self)
-        print(fname[0])
-        print("open!!")
 
     def retranslateUi(self, MainWindow):
         _translate = QtCore.QCoreApplication.translate
@@ -166,8 +167,6 @@ class Ui_MainWindow(object):
         self.action.setText(_translate("MainWindow", "\n"
 "도움말 보기"))
         self.actionmemoreader.setText(_translate("MainWindow", "memoreader 정보"))
-        
-
 
 
 if __name__ == "__main__":

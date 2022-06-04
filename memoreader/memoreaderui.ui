@@ -14,7 +14,10 @@
    <string>memoreader</string>
   </property>
   <widget class="QWidget" name="centralwidget">
-   <widget class="QTextBrowser" name="console">
+   <widget class="QTextEdit" name="console">
+    <property name="enabled">
+     <bool>true</bool>
+    </property>
     <property name="geometry">
      <rect>
       <x>10</x>
@@ -45,6 +48,9 @@
     </property>
    </widget>
    <widget class="QTabWidget" name="tabWidget">
+    <property name="enabled">
+     <bool>true</bool>
+    </property>
     <property name="geometry">
      <rect>
       <x>390</x>
@@ -59,7 +65,7 @@
      </font>
     </property>
     <property name="currentIndex">
-     <number>0</number>
+     <number>2</number>
     </property>
     <widget class="QWidget" name="utp8">
      <property name="enabled">
@@ -85,7 +91,10 @@
      <attribute name="title">
       <string>UTF-8</string>
      </attribute>
-     <widget class="QTextBrowser" name="textviewer_utp8">
+     <widget class="QTextEdit" name="textviewer_utp8">
+      <property name="enabled">
+       <bool>true</bool>
+      </property>
       <property name="geometry">
        <rect>
         <x>0</x>
@@ -112,7 +121,10 @@
      <attribute name="title">
       <string>EUC-KR</string>
      </attribute>
-     <widget class="QTextBrowser" name="textviewer_euckr">
+     <widget class="QTextEdit" name="textviewer_euckr">
+      <property name="enabled">
+       <bool>true</bool>
+      </property>
       <property name="geometry">
        <rect>
         <x>0</x>
@@ -139,7 +151,10 @@
      <attribute name="title">
       <string>CP949</string>
      </attribute>
-     <widget class="QTextBrowser" name="textviewer_cp949">
+     <widget class="QTextEdit" name="textviewer_cp949">
+      <property name="enabled">
+       <bool>true</bool>
+      </property>
       <property name="geometry">
        <rect>
         <x>0</x>
@@ -166,7 +181,10 @@
      <attribute name="title">
       <string>ANSI</string>
      </attribute>
-     <widget class="QTextBrowser" name="textviewer_ansi">
+     <widget class="QTextEdit" name="textviewer_ansi">
+      <property name="enabled">
+       <bool>true</bool>
+      </property>
       <property name="geometry">
        <rect>
         <x>0</x>
@@ -193,7 +211,10 @@
      <attribute name="title">
       <string>UNICODE</string>
      </attribute>
-     <widget class="QTextBrowser" name="textviewer_unicode">
+     <widget class="QTextEdit" name="textviewer_unicode">
+      <property name="enabled">
+       <bool>true</bool>
+      </property>
       <property name="geometry">
        <rect>
         <x>0</x>
@@ -217,7 +238,10 @@
      </widget>
     </widget>
    </widget>
-   <widget class="QTextBrowser" name="hexview">
+   <widget class="QTextEdit" name="hexview">
+    <property name="enabled">
+     <bool>true</bool>
+    </property>
     <property name="geometry">
      <rect>
       <x>10</x>
