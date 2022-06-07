@@ -18,7 +18,7 @@ class Ui_MainWindow(object):
         self.centralwidget = QtWidgets.QWidget(MainWindow)
         self.centralwidget.setObjectName("centralwidget")
         self.console = QtWidgets.QTextEdit(self.centralwidget)
-        self.console.setEnabled(False)
+        self.console.setEnabled(True)
         self.console.setGeometry(QtCore.QRect(10, 490, 371, 61))
         font = QtGui.QFont()
         font.setStyleStrategy(QtGui.QFont.PreferDefault)
@@ -203,7 +203,7 @@ class Ui_MainWindow(object):
 "<p style=\"-qt-paragraph-type:empty; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;\"><br /></p>\n"
 "<p style=\"-qt-paragraph-type:empty; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;\"><br /></p></body></html>"))
         self.console_label.setText(_translate("MainWindow", "상태창"))
-        self.utf8.setToolTip(_translate("MainWindow", "<html><head/><body><p>야<br/></p></body></html>"))
+        self.utf8.setToolTip(_translate("MainWindow", "<html><head/><body><p><br/></p></body></html>"))
         self.utf8.setWhatsThis(_translate("MainWindow", "<html><head/><body><p><br/></p></body></html>"))
         self.tabWidget.setTabText(self.tabWidget.indexOf(self.utf8), _translate("MainWindow", "UTF-8"))
         self.tabWidget.setTabText(self.tabWidget.indexOf(self.euckr), _translate("MainWindow", "EUC-KR"))
