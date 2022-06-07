@@ -6,7 +6,7 @@
    <rect>
     <x>0</x>
     <y>0</y>
-    <width>783</width>
+    <width>807</width>
     <height>600</height>
    </rect>
   </property>
@@ -55,19 +55,19 @@
      <rect>
       <x>390</x>
       <y>10</y>
-      <width>381</width>
+      <width>401</width>
       <height>551</height>
      </rect>
     </property>
     <property name="font">
      <font>
-      <pointsize>11</pointsize>
+      <pointsize>8</pointsize>
      </font>
     </property>
     <property name="currentIndex">
-     <number>2</number>
+     <number>5</number>
     </property>
-    <widget class="QWidget" name="utp8">
+    <widget class="QWidget" name="utf8">
      <property name="enabled">
       <bool>true</bool>
      </property>
@@ -91,13 +91,13 @@
      <attribute name="title">
       <string>UTF-8</string>
      </attribute>
-     <widget class="QTextEdit" name="textviewer_utp8">
+     <widget class="QTextEdit" name="textviewer_utf8">
       <property name="enabled">
        <bool>true</bool>
       </property>
       <property name="geometry">
        <rect>
-        <x>0</x>
+        <x>10</x>
         <y>0</y>
         <width>371</width>
         <height>521</height>
@@ -112,8 +112,13 @@
       <property name="maximumSize">
        <size>
         <width>371</width>
-        <height>16777215</height>
+        <height>521</height>
        </size>
+      </property>
+      <property name="font">
+       <font>
+        <pointsize>14</pointsize>
+       </font>
       </property>
      </widget>
     </widget>
@@ -127,7 +132,7 @@
       </property>
       <property name="geometry">
        <rect>
-        <x>0</x>
+        <x>10</x>
         <y>0</y>
         <width>371</width>
         <height>521</height>
@@ -144,6 +149,11 @@
         <width>371</width>
         <height>16777215</height>
        </size>
+      </property>
+      <property name="font">
+       <font>
+        <pointsize>14</pointsize>
+       </font>
       </property>
      </widget>
     </widget>
@@ -157,7 +167,7 @@
       </property>
       <property name="geometry">
        <rect>
-        <x>0</x>
+        <x>10</x>
         <y>0</y>
         <width>371</width>
         <height>521</height>
@@ -174,6 +184,11 @@
         <width>371</width>
         <height>16777215</height>
        </size>
+      </property>
+      <property name="font">
+       <font>
+        <pointsize>14</pointsize>
+       </font>
       </property>
      </widget>
     </widget>
@@ -187,7 +202,7 @@
       </property>
       <property name="geometry">
        <rect>
-        <x>0</x>
+        <x>10</x>
         <y>0</y>
         <width>371</width>
         <height>521</height>
@@ -204,6 +219,11 @@
         <width>371</width>
         <height>16777215</height>
        </size>
+      </property>
+      <property name="font">
+       <font>
+        <pointsize>14</pointsize>
+       </font>
       </property>
      </widget>
     </widget>
@@ -217,7 +237,7 @@
       </property>
       <property name="geometry">
        <rect>
-        <x>0</x>
+        <x>10</x>
         <y>0</y>
         <width>371</width>
         <height>521</height>
@@ -234,6 +254,46 @@
         <width>371</width>
         <height>16777215</height>
        </size>
+      </property>
+      <property name="font">
+       <font>
+        <pointsize>14</pointsize>
+       </font>
+      </property>
+     </widget>
+    </widget>
+    <widget class="QWidget" name="unicode_be">
+     <attribute name="title">
+      <string>Unicode(BE)</string>
+     </attribute>
+     <widget class="QTextEdit" name="textviewer_unicode_2">
+      <property name="enabled">
+       <bool>true</bool>
+      </property>
+      <property name="geometry">
+       <rect>
+        <x>10</x>
+        <y>0</y>
+        <width>371</width>
+        <height>521</height>
+       </rect>
+      </property>
+      <property name="minimumSize">
+       <size>
+        <width>371</width>
+        <height>0</height>
+       </size>
+      </property>
+      <property name="maximumSize">
+       <size>
+        <width>371</width>
+        <height>16777215</height>
+       </size>
+      </property>
+      <property name="font">
+       <font>
+        <pointsize>14</pointsize>
+       </font>
       </property>
      </widget>
     </widget>
@@ -249,6 +309,13 @@
       <width>371</width>
       <height>421</height>
      </rect>
+    </property>
+    <property name="html">
+     <string>&lt;!DOCTYPE HTML PUBLIC &quot;-//W3C//DTD HTML 4.0//EN&quot; &quot;http://www.w3.org/TR/REC-html40/strict.dtd&quot;&gt;
+&lt;html&gt;&lt;head&gt;&lt;meta name=&quot;qrichtext&quot; content=&quot;1&quot; /&gt;&lt;style type=&quot;text/css&quot;&gt;
+p, li { white-space: pre-wrap; }
+&lt;/style&gt;&lt;/head&gt;&lt;body style=&quot; font-family:'Gulim'; font-size:13.5pt; font-weight:400; font-style:normal;&quot;&gt;
+&lt;p style=&quot;-qt-paragraph-type:empty; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;br /&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
     </property>
    </widget>
    <widget class="QLabel" name="console_label_2">
@@ -282,7 +349,7 @@
     <rect>
      <x>0</x>
      <y>0</y>
-     <width>783</width>
+     <width>807</width>
      <height>21</height>
     </rect>
    </property>
@@ -291,6 +358,7 @@
      <string>파일</string>
     </property>
     <addaction name="action_open"/>
+    <addaction name="action_exit"/>
    </widget>
    <widget class="QMenu" name="menu_help">
     <property name="title">
@@ -346,6 +414,17 @@
   <action name="actionmemoreader">
    <property name="text">
     <string>memoreader 정보</string>
+   </property>
+  </action>
+  <action name="action_exit">
+   <property name="text">
+    <string>끝내기</string>
+   </property>
+   <property name="shortcut">
+    <string>Ctrl+X</string>
+   </property>
+   <property name="shortcutContext">
+    <enum>Qt::WindowShortcut</enum>
    </property>
   </action>
  </widget>

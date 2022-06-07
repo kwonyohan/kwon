@@ -1,12 +1,9 @@
 import sys
-import binascii #바이너리 아스키출력
-#import os
 from memoreader import Ui_MainWindow
 from PyQt5 import *
 from PyQt5.QtCore import *
 from PyQt5.QtWidgets import *
 from PyQt5 import uic
-#os.system('chcp 949')
 
 class mainWindow(QMainWindow, Ui_MainWindow):
     
@@ -16,17 +13,27 @@ class mainWindow(QMainWindow, Ui_MainWindow):
         self.setupUi(self)
         
         self.action_open.triggered.connect(self.openFunction)
+        self.action_exit.triggered.connect(self.exitFunction)
+        
         
     def openFunction(self):
         fname = QFileDialog.getOpenFileName(self)
         binAllString =""
-        with open(fname[0], "r") as f:
+        with open(fname[0], "rb") as f:
             data = f.read()
-        #tohex = binascii.b2a_hex(data)
-        self.hexview.setPlainText(data)
-        self.console.setPlainText(fname[0])
-        self.console.setPlainText("open!")
-        
+            self.hexview.setPlainText(str(data)) 
+            self.textviewer_euckr.setPlainText(data.decode('euc_kr', 'ignore'))
+            self.textviewer_utf8.setPlainText(data.decode('utf-8', 'ignore'))
+            self.textviewer_cp949.setPlainText(data.decode('cp949', 'ignore'))
+            self.textviewer_ansi.setPlainText(data.decode('ansi', 'ignore'))
+            self.textviewer_unicode.setPlainText(data.decode('utf-16le', 'ignore'))
+            self.textviewer_unicode_2.setPlainText(data.decode('utf-16be', 'ignore'))
+        print(fname[0])
+        print("open!!")
+        self.console.setPlainText(fname[0] +"  file open")
+    
+    def exitFunction(selt):
+        print(exit)
         
     
 app = QApplication([])
@@ -34,11 +41,3 @@ w = mainWindow()
 w.show()
 QApplication.processEvents()
 sys.exit(app.exec_())       
-
-"""    def openFunction(self):
-        fname = QFileDialog.getOpenFileName(self)
-        print(fname[0])
-        self.console.append("file open!")
-        print("open!!")
-        pass
-        """
