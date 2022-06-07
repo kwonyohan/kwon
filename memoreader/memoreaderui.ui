@@ -7,7 +7,7 @@
     <x>0</x>
     <y>0</y>
     <width>807</width>
-    <height>600</height>
+    <height>598</height>
    </rect>
   </property>
   <property name="windowTitle">
@@ -16,7 +16,7 @@
   <widget class="QWidget" name="centralwidget">
    <widget class="QTextEdit" name="console">
     <property name="enabled">
-     <bool>true</bool>
+     <bool>false</bool>
     </property>
     <property name="geometry">
      <rect>
@@ -25,6 +25,26 @@
       <width>371</width>
       <height>61</height>
      </rect>
+    </property>
+    <property name="font">
+     <font>
+      <stylestrategy>PreferDefault</stylestrategy>
+     </font>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">background-color: rgb(200,200,200);
+</string>
+    </property>
+    <property name="verticalScrollBarPolicy">
+     <enum>Qt::ScrollBarAsNeeded</enum>
+    </property>
+    <property name="html">
+     <string>&lt;!DOCTYPE HTML PUBLIC &quot;-//W3C//DTD HTML 4.0//EN&quot; &quot;http://www.w3.org/TR/REC-html40/strict.dtd&quot;&gt;
+&lt;html&gt;&lt;head&gt;&lt;meta name=&quot;qrichtext&quot; content=&quot;1&quot; /&gt;&lt;style type=&quot;text/css&quot;&gt;
+p, li { white-space: pre-wrap; }
+&lt;/style&gt;&lt;/head&gt;&lt;body style=&quot; font-family:'Gulim'; font-size:13.5pt; font-weight:400; font-style:normal;&quot;&gt;
+&lt;p style=&quot;-qt-paragraph-type:empty; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;br /&gt;&lt;/p&gt;
+&lt;p style=&quot;-qt-paragraph-type:empty; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;br /&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
     </property>
    </widget>
    <widget class="QLabel" name="console_label">
@@ -56,16 +76,17 @@
       <x>390</x>
       <y>10</y>
       <width>401</width>
-      <height>551</height>
+      <height>511</height>
      </rect>
     </property>
     <property name="font">
      <font>
       <pointsize>8</pointsize>
+      <stylestrategy>PreferDefault</stylestrategy>
      </font>
     </property>
     <property name="currentIndex">
-     <number>5</number>
+     <number>0</number>
     </property>
     <widget class="QWidget" name="utf8">
      <property name="enabled">
@@ -93,14 +114,14 @@
      </attribute>
      <widget class="QTextEdit" name="textviewer_utf8">
       <property name="enabled">
-       <bool>true</bool>
+       <bool>false</bool>
       </property>
       <property name="geometry">
        <rect>
         <x>10</x>
         <y>0</y>
         <width>371</width>
-        <height>521</height>
+        <height>481</height>
        </rect>
       </property>
       <property name="minimumSize">
@@ -119,6 +140,12 @@
        <font>
         <pointsize>14</pointsize>
        </font>
+      </property>
+      <property name="autoFillBackground">
+       <bool>false</bool>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">background-color: rgb(255,255,255)</string>
       </property>
      </widget>
     </widget>
@@ -128,7 +155,7 @@
      </attribute>
      <widget class="QTextEdit" name="textviewer_euckr">
       <property name="enabled">
-       <bool>true</bool>
+       <bool>false</bool>
       </property>
       <property name="geometry">
        <rect>
@@ -154,6 +181,9 @@
        <font>
         <pointsize>14</pointsize>
        </font>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">background-color: rgb(255,255,255)</string>
       </property>
      </widget>
     </widget>
@@ -163,7 +193,7 @@
      </attribute>
      <widget class="QTextEdit" name="textviewer_cp949">
       <property name="enabled">
-       <bool>true</bool>
+       <bool>false</bool>
       </property>
       <property name="geometry">
        <rect>
@@ -189,6 +219,9 @@
        <font>
         <pointsize>14</pointsize>
        </font>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">background-color: rgb(255,255,255)</string>
       </property>
      </widget>
     </widget>
@@ -198,7 +231,7 @@
      </attribute>
      <widget class="QTextEdit" name="textviewer_ansi">
       <property name="enabled">
-       <bool>true</bool>
+       <bool>false</bool>
       </property>
       <property name="geometry">
        <rect>
@@ -224,6 +257,9 @@
        <font>
         <pointsize>14</pointsize>
        </font>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">background-color: rgb(255,255,255)</string>
       </property>
      </widget>
     </widget>
@@ -233,7 +269,7 @@
      </attribute>
      <widget class="QTextEdit" name="textviewer_unicode">
       <property name="enabled">
-       <bool>true</bool>
+       <bool>false</bool>
       </property>
       <property name="geometry">
        <rect>
@@ -259,6 +295,9 @@
        <font>
         <pointsize>14</pointsize>
        </font>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">background-color: rgb(255,255,255)</string>
       </property>
      </widget>
     </widget>
@@ -268,7 +307,7 @@
      </attribute>
      <widget class="QTextEdit" name="textviewer_unicode_2">
       <property name="enabled">
-       <bool>true</bool>
+       <bool>false</bool>
       </property>
       <property name="geometry">
        <rect>
@@ -295,12 +334,15 @@
         <pointsize>14</pointsize>
        </font>
       </property>
+      <property name="styleSheet">
+       <string notr="true">background-color: rgb(255,255,255)</string>
+      </property>
      </widget>
     </widget>
    </widget>
    <widget class="QTextEdit" name="hexview">
     <property name="enabled">
-     <bool>true</bool>
+     <bool>false</bool>
     </property>
     <property name="geometry">
      <rect>
@@ -309,6 +351,9 @@
       <width>371</width>
       <height>421</height>
      </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">background-color: rgb(255,255,255)</string>
     </property>
     <property name="html">
      <string>&lt;!DOCTYPE HTML PUBLIC &quot;-//W3C//DTD HTML 4.0//EN&quot; &quot;http://www.w3.org/TR/REC-html40/strict.dtd&quot;&gt;
@@ -338,11 +383,28 @@ p, li { white-space: pre-wrap; }
      <string>불러온 파일 HEX 값</string>
     </property>
    </widget>
+   <widget class="QPushButton" name="savebutton">
+    <property name="geometry">
+     <rect>
+      <x>470</x>
+      <y>530</y>
+      <width>321</width>
+      <height>26</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>해당 인코딩으로 다른이름으로 저장</string>
+    </property>
+    <property name="shortcut">
+     <string>Ctrl+Shift+S</string>
+    </property>
+   </widget>
    <zorder>tabWidget</zorder>
    <zorder>console</zorder>
    <zorder>console_label</zorder>
    <zorder>hexview</zorder>
    <zorder>console_label_2</zorder>
+   <zorder>savebutton</zorder>
   </widget>
   <widget class="QMenuBar" name="menubar">
    <property name="geometry">
@@ -364,7 +426,7 @@ p, li { white-space: pre-wrap; }
     <property name="title">
      <string>도움말</string>
     </property>
-    <addaction name="action"/>
+    <addaction name="action_help"/>
     <addaction name="actionmemoreader"/>
    </widget>
    <widget class="QMenu" name="menu_Language">
@@ -405,7 +467,7 @@ p, li { white-space: pre-wrap; }
     <string>English</string>
    </property>
   </action>
-  <action name="action">
+  <action name="action_help">
    <property name="text">
     <string>
 도움말 보기</string>
