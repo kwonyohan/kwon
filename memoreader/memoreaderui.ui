@@ -141,6 +141,15 @@ p, li { white-space: pre-wrap; }
         <pointsize>14</pointsize>
        </font>
       </property>
+      <property name="toolTip">
+       <string/>
+      </property>
+      <property name="accessibleName">
+       <string/>
+      </property>
+      <property name="accessibleDescription">
+       <string/>
+      </property>
       <property name="autoFillBackground">
        <bool>false</bool>
       </property>
@@ -155,14 +164,14 @@ p, li { white-space: pre-wrap; }
      </attribute>
      <widget class="QTextEdit" name="textviewer_euckr">
       <property name="enabled">
-       <bool>false</bool>
+       <bool>true</bool>
       </property>
       <property name="geometry">
        <rect>
         <x>10</x>
         <y>0</y>
         <width>371</width>
-        <height>521</height>
+        <height>481</height>
        </rect>
       </property>
       <property name="minimumSize">
@@ -193,14 +202,14 @@ p, li { white-space: pre-wrap; }
      </attribute>
      <widget class="QTextEdit" name="textviewer_cp949">
       <property name="enabled">
-       <bool>false</bool>
+       <bool>true</bool>
       </property>
       <property name="geometry">
        <rect>
         <x>10</x>
         <y>0</y>
         <width>371</width>
-        <height>521</height>
+        <height>481</height>
        </rect>
       </property>
       <property name="minimumSize">
@@ -231,14 +240,14 @@ p, li { white-space: pre-wrap; }
      </attribute>
      <widget class="QTextEdit" name="textviewer_ansi">
       <property name="enabled">
-       <bool>false</bool>
+       <bool>true</bool>
       </property>
       <property name="geometry">
        <rect>
         <x>10</x>
         <y>0</y>
         <width>371</width>
-        <height>521</height>
+        <height>481</height>
        </rect>
       </property>
       <property name="minimumSize">
@@ -269,14 +278,14 @@ p, li { white-space: pre-wrap; }
      </attribute>
      <widget class="QTextEdit" name="textviewer_unicode">
       <property name="enabled">
-       <bool>false</bool>
+       <bool>true</bool>
       </property>
       <property name="geometry">
        <rect>
         <x>10</x>
         <y>0</y>
         <width>371</width>
-        <height>521</height>
+        <height>481</height>
        </rect>
       </property>
       <property name="minimumSize">
@@ -307,14 +316,14 @@ p, li { white-space: pre-wrap; }
      </attribute>
      <widget class="QTextEdit" name="textviewer_unicode_2">
       <property name="enabled">
-       <bool>false</bool>
+       <bool>true</bool>
       </property>
       <property name="geometry">
        <rect>
         <x>10</x>
         <y>0</y>
         <width>371</width>
-        <height>521</height>
+        <height>481</height>
        </rect>
       </property>
       <property name="minimumSize">
@@ -342,7 +351,7 @@ p, li { white-space: pre-wrap; }
    </widget>
    <widget class="QTextEdit" name="hexview">
     <property name="enabled">
-     <bool>false</bool>
+     <bool>true</bool>
     </property>
     <property name="geometry">
      <rect>
@@ -392,11 +401,26 @@ p, li { white-space: pre-wrap; }
       <height>26</height>
      </rect>
     </property>
+    <property name="toolTip">
+     <string>Ctrl+Shift+S</string>
+    </property>
+    <property name="whatsThis">
+     <string/>
+    </property>
+    <property name="accessibleName">
+     <string/>
+    </property>
+    <property name="accessibleDescription">
+     <string/>
+    </property>
     <property name="text">
      <string>해당 인코딩으로 다른이름으로 저장</string>
     </property>
     <property name="shortcut">
      <string>Ctrl+Shift+S</string>
+    </property>
+    <property name="checkable">
+     <bool>false</bool>
     </property>
    </widget>
    <zorder>tabWidget</zorder>
@@ -461,10 +485,16 @@ p, li { white-space: pre-wrap; }
    <property name="text">
     <string>한국어</string>
    </property>
+   <property name="shortcut">
+    <string>Alt+K</string>
+   </property>
   </action>
   <action name="actionEnglish">
    <property name="text">
     <string>English</string>
+   </property>
+   <property name="shortcut">
+    <string>Alt+E</string>
    </property>
   </action>
   <action name="action_help">
@@ -472,10 +502,16 @@ p, li { white-space: pre-wrap; }
     <string>
 도움말 보기</string>
    </property>
+   <property name="shortcut">
+    <string>Ctrl+H</string>
+   </property>
   </action>
   <action name="actionmemoreader">
    <property name="text">
     <string>memoreader 정보</string>
+   </property>
+   <property name="shortcut">
+    <string>Ctrl+A</string>
    </property>
   </action>
   <action name="action_exit">
