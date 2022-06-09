@@ -48,7 +48,7 @@ class mainWindow(QMainWindow, Ui_MainWindow):
                     self.console.append("Found '占쏙옙(ï¿½)' in the file (efbfbdefbfbd)")
                     msgBox = QMessageBox()
                     if self.lan == 0:
-                        msgBox.setText("해당 파일은 '占쏙옙'이 일어난 회손된 파일일 수 있으며 \n어떤 인코딩으로도 원본을 볼 수 없음을 경고합니다.")
+                        msgBox.setText("해당 파일은 '占쏙옙'이 일어난 훼손된 파일일 수 있으며 \n어떤 인코딩으로도 원본을 볼 수 없음을 경고합니다.")
                         msgBox.setWindowTitle("손상된 파일 경고")
                         msgBox.setDetailedText("해당 파일의 HEX값에 EF BF BD EF BF BD(占쏙옙) 값이 반복되어 나타나 있다면 UTF-8로 저장하는 과정 중 오류가 발생한 손상된 문서로 어떤 방식을 통해서도 원본 복구가 불가능함을 알림니다.")
                     else:
